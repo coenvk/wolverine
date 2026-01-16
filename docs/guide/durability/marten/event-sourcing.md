@@ -190,8 +190,7 @@ public static IEnumerable<object> Handle(MarkItemReady command, Order order)
 <sup><a href='https://github.com/JasperFx/wolverine/blob/main/src/Persistence/OrderEventSourcingSample/Order.cs#L254-L281' title='Snippet source file'>snippet source</a> | <a href='#snippet-sample_MarkItemReadyHandler' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
-In the case above, Wolverine is wrapping middleware around our basic command handler to
-to:
+In the case above, Wolverine is wrapping middleware around our basic command handler to:
 
 1. Fetch the appropriate `Order` aggregate matching the command
 2. Append any new events returned from the handle method to the Marten event stream
